@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="fullPage">
+        <div class="section s1">
+            <!-- <h1>The First Section <a href="#section3">clicky</a> </h1> -->
+
+            <div class="slide">
+                <h1>The first slide</h1>
+            </div>
+            <div class="slide">
+                <h1>The second slide</h1>
+            </div>
+        </div>
+        <div class="section s2">
+            <h1>The Second Section <a href="#section1">clicky</a> </h1>
+        </div>
+        <div class="section s3">
+            <h1>The Third Section <a href="#section2">clicky</a> </h1>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+
+    <script>
+        new fullpage('#fullPage', {
+            autoScrolling: true,
+            navigation: true,
+            anchors: ['section1', 'section2', 'section3'],
+            navigationTooltips: ['Home', 'Sobre', 'Contato'],
+            showActiveTooltip: true,
+            scrollingSpeed: 2000,
+            controlArrows: false,
+            slidesNavigation: true
+        })
+    </script>
+</body>
+</html>
